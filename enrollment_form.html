@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+    <link rel="stylesheet" href="ulit.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>ENROLLMENT FORM</h1>
+
+        <h3>Instructions:</h3>
+        <ol>
+            <li>Fill in the form fields.</li>
+            <li>Check your interests.</li>
+            <li>Click "Enroll Now" to submit.</li>
+        </ol>
+
+        <form>
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="18" max="100" placeholder="Enter your age" required>
+
+            <label>Sex:</label>
+            <input type="radio" id="male" name="sex" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="sex" value="Female">
+            <label for="female">Female</label>
+
+            <label for="course">Course:</label>
+            <select id="course" name="course" required>
+                <option value="BSIT">BSIT</option>
+                <option value="BSSW">BSSW</option>
+                <option value="BSPA">BSPA</option>
+            </select>
+
+            <label>Interests:</label>
+            <input type="checkbox" id="webdev" name="interests" value="Web Development">
+            <label for="webdev">Web Development</label>
+            <input type="checkbox" id="datascience" name="interests" value="Data Science">
+            <label for="datascience">Data Science</label>
+            <input type="checkbox" id="networking" name="interests" value="Networking">
+            <label for="networking">Networking</label>
+            <input type="checkbox" id="graphicdesign" name="interests" value="Graphic Design">
+            <label for="graphicdesign">Graphic Design</label>
+
+            <button type="submit">Enroll Now</button>
+        </form>
+
+        <h3>Student Data</h3>
+
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>Sex</th>
+                <th>Course</th>
+                <th>Interests</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Reyver Maranan</td>
+                <td>Reyverlangelo@gmail.com</td>
+                <td>15</td>
+                <td>Male</td>
+                <td>BMMA</td>
+                <td>Web Development, Graphic Designer</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Rae Ann Maranan</td>
+                <td>Ysay@gmail.com</td>
+                <td>23</td>
+                <td>Female</td>
+                <td>BSBA</td>
+                <td>Data Science</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Reylan Maranan</td>
+                <td>ReylanLuis@gmail.com</td>
+                <td>24</td>
+                <td>Male</td>
+                <td>BSMT</td>
+                <td>Networking</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Matteo Maranan</td>
+                <td>matteo@gmail.com</td>
+                <td>47</td>
+                <td>Male</td>
+                <td>BSIT</td>
+                <td>Web Development</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Raeven Maranan</td>
+                <td>raevenladine@gmail.com</td>
+                <td>20</td>
+                <td>Female</td>
+                <td>BSIT</td>
+                <td>Web Development, Graphic Design</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
+
